@@ -253,9 +253,9 @@ h6 {
 }
 
 .card-main-container {
-    width: 100%;
+    width: 70%;
     /* background-color: #02073E; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -295,27 +295,27 @@ h6 {
 }
 
 .card-list-container {
-    display: flex;
+    /* display: flex; */
     gap: 25px;
 }
 
 .card {
-    display: flex;
+    position: relative;
+    /* To ensure the card content stays above the pseudo-element */
     flex-direction: column;
-    /* background-color: #EF9E48; */
     width: 450px;
-    /* height: 400px; */
-    /* gap: 5px; */
+    z-index: 1;
 }
 
 .card-content {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 30px;
     gap: 10px;
-    border: 1px solid #F3F4F5
+    border: 1px solid #F3F4F5;
+    background-color: #ffffff;
 }
 
 .card-content div {
@@ -352,4 +352,262 @@ h6 {
     font-family: "Heebo", serif;
     font-weight: 500;
     opacity: 0.7;
+}
+
+.slick-prev:before {
+    color: #000000 !important;
+}
+
+.slick-next:before {
+    color: #000000 !important;
+}
+
+/* Example CSS */
+.slick-slider {
+    height: auto !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardimg {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    overflow: hidden;
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+
+}
+
+.core-main-conatiner {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.core-left-conatiner {
+    width: 50%;
+    height: 650px;
+    background: linear-gradient(106.43deg, rgba(255, 253, 230, 0.35) -1.4%, rgba(255, 253, 230, 0.07) -1.39%, rgba(224, 239, 250, 0.35) 100.87%);
+    border-top-right-radius: 600px;
+    /* border-bottom-right-radius: 600px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    /* padding-right: 5px; */
+}
+
+.core-right-conatiner {
+    width: 50%;
+    height: 500px;
+    /* background-color: #272018; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.core-card {
+    width: 300px;
+    height: 280px;
+    background-color: #ffffff;
+    box-shadow: 0px 25px 100px 0px #45589D14;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.core-card h1 {
+    color: #EF9E48;
+    font-size: 72px;
+    line-height: 55px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.core-inner-card {
+    display: flex;
+    gap: 45px;
+}
+
+.core-main-card {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    overflow-y: scroll;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 15px;
+}
+
+.core-main-card::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.core-btn-text {
+    color: #EF9E48;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.core-btn {
+    background: #FCF2E8;
+    padding: 10px;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.core-heading {
+    color: #0F2137;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.core-main-heading {
+    color: #EF9E48;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 2.0999999046325684px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.accordion-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.accordion-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.question-inner-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    border-bottom: 1px solid #E5ECF4;
+    width: 100%;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.question-answer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: -6px;
+}
+
+.question {
+    color: #0F2137;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.answer {
+    color: #0F2137;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    font-family: "DM Sans", serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.tutorial-main-conatiner {
+    width: 100%;
+    display: flex;
+}
+
+/* .tutorial-left-conatiner{
+    width: 50%;
+    background-image: url('../utils/images/Group.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    opacity: 0.3;
+} */
+
+.tutorial-left-conatiner {
+    position: relative;
+    /* Ensure proper positioning for the pseudo-element */
+    width: 50%;
+}
+
+.tutorial-left-conatiner::before {
+    content: "";
+    /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../utils/images/Group.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.tutorial-left-inner-conatiner {
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.background-card {
+    position: absolute;
+    top: 13%;
+    left: 22%;
+    opacity: 0.8;
 }

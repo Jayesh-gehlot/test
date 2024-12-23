@@ -3,16 +3,17 @@ import Header from '../components/Header'
 import CardSilder from '../components/CardSilder'
 import CoreFeatures from '../components/CoreFeatures'
 import FreeTutorialCard from '../components/FreeTutorialCard'
-import Accoridain from '../components/Accoridain'
+
 import "./mainlayout.css"
+import Accordion from '../components/Accordion'
 const MainLayout = () => {
     return (
         <div className='main_layout'>
             <Header />
             <CardSilder />
-            {/* <CoreFeatures />
+            <CoreFeatures />
             <FreeTutorialCard />
-            <Accoridain /> */}
+            <Accordion />
         </div>
     )
 }
