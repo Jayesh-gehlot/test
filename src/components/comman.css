@@ -24,7 +24,6 @@ h6 {
 
 .header-inner-container {
     width: 90%;
-    /* background-color: aqua; */
     height: auto;
     display: flex;
     position: relative;
@@ -47,7 +46,6 @@ h6 {
 .header-menu-bar {
     width: 1021px;
     height: min-content;
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +55,6 @@ h6 {
 
 .right-container {
     width: 25%;
-    /* background-color: antiquewhite; */
     height: 50px;
 }
 
@@ -85,7 +82,6 @@ h6 {
 
 .list-container div p {
     color: #02073E;
-    /* font-family: FontAwesome; */
     font-size: 16px;
     line-height: 33px;
     text-align: center;
@@ -144,7 +140,6 @@ h6 {
 
 .header-content-inner-container h1 {
     color: #02073E;
-    /* font-family: FontAwesome; */
     font-size: 85px;
     line-height: 100px;
     text-align: center;
@@ -185,7 +180,6 @@ h6 {
 
 .search-container p {
     color: #02073E;
-    /* font-family: FontAwesome; */
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -200,7 +194,6 @@ h6 {
 .social-media-conatiner {
     display: flex;
     width: 100%;
-    /* gap: 35px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -221,7 +214,6 @@ h6 {
 .video-main-conatiner {
     width: 575px;
     height: 600px;
-    /* background-color: #02073E; */
     position: absolute;
     top: 15%;
     right: 5%;
@@ -242,7 +234,6 @@ h6 {
 .video {
     width: 544px;
     height: 680px;
-    /* background: black; */
     position: absolute;
     top: 0;
     border-radius: 5px;
@@ -254,8 +245,6 @@ h6 {
 
 .card-main-container {
     width: 70%;
-    /* background-color: #02073E; */
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -295,20 +284,18 @@ h6 {
 }
 
 .card-list-container {
-    /* display: flex; */
+    
     gap: 25px;
 }
 
 .card {
     position: relative;
-    /* To ensure the card content stays above the pseudo-element */
     flex-direction: column;
     width: 450px;
     z-index: 1;
 }
 
 .card-content {
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -362,7 +349,6 @@ h6 {
     color: #000000 !important;
 }
 
-/* Example CSS */
 .slick-slider {
     height: auto !important;
 }
@@ -399,19 +385,16 @@ h6 {
     height: 650px;
     background: linear-gradient(106.43deg, rgba(255, 253, 230, 0.35) -1.4%, rgba(255, 253, 230, 0.07) -1.39%, rgba(224, 239, 250, 0.35) 100.87%);
     border-top-right-radius: 600px;
-    /* border-bottom-right-radius: 600px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
-    /* padding-right: 5px; */
 }
 
 .core-right-conatiner {
     width: 50%;
     height: 500px;
-    /* background-color: #272018; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -569,24 +552,15 @@ h6 {
     display: flex;
 }
 
-/* .tutorial-left-conatiner{
-    width: 50%;
-    background-image: url('../utils/images/Group.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    opacity: 0.3;
-} */
+
 
 .tutorial-left-conatiner {
     position: relative;
-    /* Ensure proper positioning for the pseudo-element */
     width: 50%;
 }
 
 .tutorial-left-conatiner::before {
     content: "";
-    /* Required for pseudo-elements */
     position: absolute;
     top: 0;
     left: 0;
